@@ -14,6 +14,7 @@ public class Day4 {
     public void day4Part1_test() throws IOException {
         String[] chunks = new String(getClass().getClassLoader().getResourceAsStream("Day4Test.txt")
                 .readAllBytes())
+                .replace("\r", "")
                 .split("\n\n");
 
         long valid = Arrays.stream(chunks)
@@ -30,6 +31,7 @@ public class Day4 {
     public void day4Part1() throws IOException {
         String[] chunks = new String(getClass().getClassLoader().getResourceAsStream("Day4.txt")
                 .readAllBytes())
+                .replace("\r", "")
                 .split("\n\n");
 
         long valid = Arrays.stream(chunks)
@@ -46,6 +48,7 @@ public class Day4 {
     public void day4Part2() throws IOException {
         String[] chunks = new String(getClass().getClassLoader().getResourceAsStream("Day4.txt")
                 .readAllBytes())
+                .replace("\r", "")
                 .split("\n\n");
 
         long valid = Arrays.stream(chunks)

@@ -14,6 +14,7 @@ public class Day2 {
     public void day2Part1_test() throws IOException {
         String[] inputStrings = new String(getClass().getClassLoader().getResourceAsStream("Day2P1Test.txt")
                 .readAllBytes())
+                .replace("\r", "")
                 .split("\n");
 
         Long validPasswords = Arrays.asList(inputStrings).stream()
@@ -28,6 +29,7 @@ public class Day2 {
     public void day2Part1() throws IOException {
         String[] inputStrings = new String(getClass().getClassLoader().getResourceAsStream("Day2.txt")
                 .readAllBytes())
+                .replace("\r", "")
                 .split("\n");
 
         Long validPasswords = Arrays.asList(inputStrings).stream()
@@ -42,6 +44,7 @@ public class Day2 {
     public void day2Part2_test() throws IOException {
         String[] inputStrings = new String(getClass().getClassLoader().getResourceAsStream("Day2P2Test.txt")
                 .readAllBytes())
+                .replace("\r", "")
                 .split("\n");
 
         Long validPasswords = Arrays.asList(inputStrings).stream()
@@ -56,6 +59,7 @@ public class Day2 {
     public void day2Part2() throws IOException {
         String[] inputStrings = new String(getClass().getClassLoader().getResourceAsStream("Day2.txt")
                 .readAllBytes())
+                .replace("\r", "")
                 .split("\n");
 
         Long validPasswords = Arrays.asList(inputStrings).stream()

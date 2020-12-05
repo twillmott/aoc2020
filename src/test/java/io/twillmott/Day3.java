@@ -15,6 +15,7 @@ public class Day3 {
     public void day3Part1_test() throws IOException {
         String[] inputRows = new String(getClass().getClassLoader().getResourceAsStream("Day3P1Test.txt")
                 .readAllBytes())
+                .replace("\r", "")
                 .split("\n");
         String[][] inputSlope = Arrays.stream(inputRows).map(s -> s.split("")).toArray(String[][]::new);
 
@@ -27,6 +28,7 @@ public class Day3 {
     public void day3Part1() throws IOException {
         String[] inputRows = new String(getClass().getClassLoader().getResourceAsStream("Day3.txt")
                 .readAllBytes())
+                .replace("\r", "")
                 .split("\n");
         String[][] inputSlope = Arrays.stream(inputRows).map(s -> s.split("")).toArray(String[][]::new);
 
@@ -39,6 +41,7 @@ public class Day3 {
     public void day3Part2_test() throws IOException {
         String[] inputRows = new String(getClass().getClassLoader().getResourceAsStream("Day3P1Test.txt")
                 .readAllBytes())
+                .replace("\r", "")
                 .split("\n");
         String[][] inputSlope = Arrays.stream(inputRows).map(s -> s.split("")).toArray(String[][]::new);
 
@@ -56,6 +59,7 @@ public class Day3 {
     public void day3Part2() throws IOException {
         String[] inputRows = new String(getClass().getClassLoader().getResourceAsStream("Day3.txt")
                 .readAllBytes())
+                .replace("\r", "")
                 .split("\n");
         String[][] inputSlope = Arrays.stream(inputRows).map(s -> s.split("")).toArray(String[][]::new);
 

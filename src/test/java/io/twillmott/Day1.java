@@ -52,6 +52,7 @@ public class Day1 {
     public void day1_part1() throws IOException {
         String[] inputStrings = new String(getClass().getClassLoader().getResourceAsStream("Day1.txt")
                 .readAllBytes())
+                .replace("\r", "")
                 .split("\n");
         List entries = Arrays.asList(inputStrings).stream()
                 .map(s -> Integer.valueOf(s))
@@ -80,6 +81,7 @@ public class Day1 {
     public void day1_part2() throws IOException {
         String[] inputStrings = new String(getClass().getClassLoader().getResourceAsStream("Day1.txt")
                 .readAllBytes())
+                .replace("\r", "")
                 .split("\n");
         List entries = Arrays.asList(inputStrings).stream()
                 .map(s -> Integer.valueOf(s))
